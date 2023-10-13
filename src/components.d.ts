@@ -6,56 +6,114 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface AndeanuxCheckbox {
+    }
+    interface AndeanuxInputDate {
+    }
+    interface AndeanuxInputDaterange {
+    }
+    interface AndeanuxInputText {
+        "label": string;
+        "placeholder": string;
+    }
+    interface AndeanuxRadio {
+    }
+    interface AndeanuxSelect {
+    }
+    interface AndeanuxTextarea {
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLAndeanuxCheckboxElement extends Components.AndeanuxCheckbox, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLAndeanuxCheckboxElement: {
+        prototype: HTMLAndeanuxCheckboxElement;
+        new (): HTMLAndeanuxCheckboxElement;
+    };
+    interface HTMLAndeanuxInputDateElement extends Components.AndeanuxInputDate, HTMLStencilElement {
+    }
+    var HTMLAndeanuxInputDateElement: {
+        prototype: HTMLAndeanuxInputDateElement;
+        new (): HTMLAndeanuxInputDateElement;
+    };
+    interface HTMLAndeanuxInputDaterangeElement extends Components.AndeanuxInputDaterange, HTMLStencilElement {
+    }
+    var HTMLAndeanuxInputDaterangeElement: {
+        prototype: HTMLAndeanuxInputDaterangeElement;
+        new (): HTMLAndeanuxInputDaterangeElement;
+    };
+    interface HTMLAndeanuxInputTextElement extends Components.AndeanuxInputText, HTMLStencilElement {
+    }
+    var HTMLAndeanuxInputTextElement: {
+        prototype: HTMLAndeanuxInputTextElement;
+        new (): HTMLAndeanuxInputTextElement;
+    };
+    interface HTMLAndeanuxRadioElement extends Components.AndeanuxRadio, HTMLStencilElement {
+    }
+    var HTMLAndeanuxRadioElement: {
+        prototype: HTMLAndeanuxRadioElement;
+        new (): HTMLAndeanuxRadioElement;
+    };
+    interface HTMLAndeanuxSelectElement extends Components.AndeanuxSelect, HTMLStencilElement {
+    }
+    var HTMLAndeanuxSelectElement: {
+        prototype: HTMLAndeanuxSelectElement;
+        new (): HTMLAndeanuxSelectElement;
+    };
+    interface HTMLAndeanuxTextareaElement extends Components.AndeanuxTextarea, HTMLStencilElement {
+    }
+    var HTMLAndeanuxTextareaElement: {
+        prototype: HTMLAndeanuxTextareaElement;
+        new (): HTMLAndeanuxTextareaElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "andeanux-checkbox": HTMLAndeanuxCheckboxElement;
+        "andeanux-input-date": HTMLAndeanuxInputDateElement;
+        "andeanux-input-daterange": HTMLAndeanuxInputDaterangeElement;
+        "andeanux-input-text": HTMLAndeanuxInputTextElement;
+        "andeanux-radio": HTMLAndeanuxRadioElement;
+        "andeanux-select": HTMLAndeanuxSelectElement;
+        "andeanux-textarea": HTMLAndeanuxTextareaElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface AndeanuxCheckbox {
+    }
+    interface AndeanuxInputDate {
+    }
+    interface AndeanuxInputDaterange {
+    }
+    interface AndeanuxInputText {
+        "label"?: string;
+        "placeholder"?: string;
+    }
+    interface AndeanuxRadio {
+    }
+    interface AndeanuxSelect {
+    }
+    interface AndeanuxTextarea {
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "andeanux-checkbox": AndeanuxCheckbox;
+        "andeanux-input-date": AndeanuxInputDate;
+        "andeanux-input-daterange": AndeanuxInputDaterange;
+        "andeanux-input-text": AndeanuxInputText;
+        "andeanux-radio": AndeanuxRadio;
+        "andeanux-select": AndeanuxSelect;
+        "andeanux-textarea": AndeanuxTextarea;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "andeanux-checkbox": LocalJSX.AndeanuxCheckbox & JSXBase.HTMLAttributes<HTMLAndeanuxCheckboxElement>;
+            "andeanux-input-date": LocalJSX.AndeanuxInputDate & JSXBase.HTMLAttributes<HTMLAndeanuxInputDateElement>;
+            "andeanux-input-daterange": LocalJSX.AndeanuxInputDaterange & JSXBase.HTMLAttributes<HTMLAndeanuxInputDaterangeElement>;
+            "andeanux-input-text": LocalJSX.AndeanuxInputText & JSXBase.HTMLAttributes<HTMLAndeanuxInputTextElement>;
+            "andeanux-radio": LocalJSX.AndeanuxRadio & JSXBase.HTMLAttributes<HTMLAndeanuxRadioElement>;
+            "andeanux-select": LocalJSX.AndeanuxSelect & JSXBase.HTMLAttributes<HTMLAndeanuxSelectElement>;
+            "andeanux-textarea": LocalJSX.AndeanuxTextarea & JSXBase.HTMLAttributes<HTMLAndeanuxTextareaElement>;
         }
     }
 }
